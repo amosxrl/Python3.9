@@ -1,5 +1,7 @@
 venv
-Dockerfile
+
+.dockerignore
 docker-compose.yml
+Dockerfile
 requirements.txt
-docker
+
