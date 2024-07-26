@@ -1,6 +1,8 @@
 
-from tkinter import*
-import tkinter, sys
+from tkinter import*  # noqa: F403
+import tkinter
+from tkinter import ttk
+from turtle import color  # noqa: F401
 
 width = 800
 heigh = 600
@@ -45,8 +47,8 @@ class square:
 class Game:
 		
 	def __init__(self):
-		self.window = tk()
-		self.canvas = canvas(self.window, bg='black', width=width, heigh=heigh)
+		self.window = ttk()
+		self.canvas = Canvas(self.window, bg='black', width=width, heigh=heigh)  # noqa: F405
 		self.canvas.pack()
 
 		self.s = square(20, 20, 'white')
