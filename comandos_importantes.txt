@@ -1,0 +1,51 @@
+# Comandos Git
+
+## Configuração
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@example.com"
+
+## Inicializar e Clonar Repositórios
+git init
+git clone <url-do-repositorio>
+
+## Gerenciar Alterações
+git add <arquivo>
+git add . # Adiciona todos os arquivos modificados
+git commit -m "Mensagem do commit"
+git status
+git diff
+
+## Branches
+git branch # Lista todas as branches
+git branch <nome-da-branch> # Cria uma nova branch
+git checkout <nome-da-branch> # Troca para a branch especificada
+git merge <nome-da-branch> # Mescla uma branch na branch atual
+git branch -d <nome-da-branch> # Deleta uma branch
+
+## Sincronização com o Repositório Remoto
+git push origin <nome-da-branch>
+git pull origin <nome-da-branch>
+
+## Reverter Alterações
+git reset --hard <commit> # Reverte para um commit específico
+git revert <commit> # Cria um novo commit que desfaz as alterações de um commit anterior
+
+# Comandos Docker
+
+## Imagens
+docker pull <nome-da-imagem>:<tag>
+docker images # Lista todas as imagens
+
+## Contêineres
+docker run -d -p <porta-local>:<porta-conteiner> --name <nome-do-container> <nome-da-imagem>:<tag>
+docker ps # Lista todos os contêineres em execução
+docker stop <nome-do-container> # Para um contêiner
+docker rm <nome-do-container> # Remove um contêiner
+
+## Dockerfile
+docker build -t <nome-da-imagem>:<tag> .
+docker run -it <nome-da-imagem>:<tag> /bin/bash # Executa um comando dentro do contêiner
+
+## Docker Compose
+docker-compose up # Inicia os serviços definidos no docker-compose.yml
+docker-compose down # Para e remove os serviços definidos no docker-compose.yml

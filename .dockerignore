@@ -1,0 +1,6 @@
+# Ignore arquivos e diretórios que não são necessários no contêiner
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
